@@ -1,3 +1,4 @@
+import quests from './data/quest-data.js';
 
 export function generateUser(formData){
     return {
@@ -18,4 +19,13 @@ export function setUser(userObject){
 export function getUser(){
     const userString = localStorage.getItem('USER');
     return JSON.parse(userString);
+}
+
+export function hasCompletedAllQuests(userObject){
+    for (let quest of quests){
+        if (!userObject.completed[quest.id]){
+            return false;
+        }
+    }
+    return true;
 }

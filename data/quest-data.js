@@ -36,7 +36,7 @@ const senior = {
 };
 
 const antimasker = {
-    id: antimasker,
+    id: 'antimasker',
     title: 'I have a medical exemption!',
     map: {
 
@@ -70,6 +70,7 @@ const antimasker = {
 };
 
 const thief = {
+    id: 'thief',
     title: 'I demand a refund!',
     map: {
 

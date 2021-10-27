@@ -1,0 +1,13 @@
+
+body {
+    background-image: url('../assets/storemap.jpg');
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

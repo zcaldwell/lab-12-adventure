@@ -1,5 +1,13 @@
 import quests from './data/quest-data.js';
 
+export function findById(items, id){
+    for (let item of items){
+        if (item.id === id){
+            return item;
+        }
+    }
+}
+
 export function generateUser(formData){
     return {
         completed: {},
@@ -28,4 +36,10 @@ export function hasCompletedAllQuests(userObject){
         }
     }
     return true;
+}
+
+export function scoreQuest(choiceObject, questId, userObject){
+    userObject.patience += choiceObject.patience;
+    userObject.correctiveactions += choiceObject.correctiveactions;
+    userObject.completed[questId] = true;
 }

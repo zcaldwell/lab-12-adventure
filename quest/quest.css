@@ -1,4 +1,29 @@
 
+* {
+    font-family: Kanit;
+}
+
 .hidden {
     display: none;
+}
+
+#quest-image {
+    width: 600px;
+    height: 600px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+#header-avatar {
+    height: 50px;
+    width: 50px
+}
+
+#user-info {
+    display: flex;
+    flex-direction: row;
 }

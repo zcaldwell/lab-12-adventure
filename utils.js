@@ -12,7 +12,7 @@ export function generateUser(formData){
     return {
         completed: {},
         patience: 100,
-        correctiveactions: 0,
+        correctiveaction: 0,
         name: formData.get('name'),
         job: formData.get('job'),
     };
@@ -40,6 +40,6 @@ export function hasCompletedAllQuests(userObject){
 
 export function scoreQuest(choiceObject, questId, userObject){
     userObject.patience += choiceObject.patience;
-    userObject.correctiveactions += choiceObject.correctiveactions;
+    userObject.correctiveaction += choiceObject.correctiveaction;
     userObject.completed[questId] = true;
 }

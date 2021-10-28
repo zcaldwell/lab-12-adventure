@@ -32,7 +32,7 @@ const senior = {
             You tell the senior that you are selling plums for 1.99 a pound and they can make their own if they want prune juice. They ask to speak to your manager. 
         `,
         patience: -20,
-        correctiveaction: +1,
+        correctiveaction: +2,
     
     }]
 
@@ -51,7 +51,7 @@ const antimasker = {
     choices: [{
         id: 'apathy',
         description: 'Not Worth The Arguement.',
-        results: `
+        result: `
         You approach the man and ask him if he would like a mask. He grins and says "I have a medican exemption, here is a letter from my Chriopracter that says I get back pain if I don't have enough oxygen" You sigh and realize its not worth your time and decide to go back to work at ignore them.
         `,
         patience: -50,
@@ -59,18 +59,18 @@ const antimasker = {
     }, {
         id: 'assertive',
         description: 'Be Assertive.',
-        results: `
+        result: `
         Before the man walks in the door you stop him and tell him he cannot come in if he doesn't have a mask. He waves his medical exemption he made in MSpaint in your face but you tell him there isn't a medical exemption for being stupid and shrug your shoulders. He says he is going to write a letter to corporate and that you will be fired.`,
         patience: +40,
-        correctiveaction: 1,
+        correctiveaction: +1,
     }, {
         id: 'argue',
         description: 'Talk To A Wall.',
-        results: `
+        result: `
         An co-worker of yours asks you to speak to a man not wearing a mask in the store because they will not listen to them. You go and have a conversation with the man which lasts for an hour and he makes abosolutely no sense. As it drags on you slowly die inside but don't budge.He eventually asks to speak to a manager and the manager apologizes and lets the man shop with no mask on but a smug look on his face.
         `,
         patience: -60,
-        correctiveraction: 1,
+        correctiveraction: +2,
     }]
 
 };
@@ -91,7 +91,7 @@ const thief = {
         result: `
         You explain to the customer that you cannot give them a refund for that many things without a receipt. They become intantly agitaged and say "But I talked to someone named....Jon about it..." Nobody named Jon works there so you tell them sorry you can't get a refund. They ask for a manager who gives them the money. They come back in the next day and steal them again...`,
         patience: -30,
-        correctiveaction: 1,
+        correctiveaction: +1,
     }, {
         id: 'giftcard',
         description: 'Give Them A Giftcard.',
@@ -106,7 +106,7 @@ const thief = {
         result:` This being the third time in a month the person has returned expensive things without a receipt you accuse the person of returning stolen merchandise. They become defensive and demand to speak to your Manager who apologizes and gives them a cash refund. You sigh and sink deeper into apathy.
         `,
         patience: -50,
-        correctiveaction: 1,
+        correctiveaction: +2,
     }]
  
 };

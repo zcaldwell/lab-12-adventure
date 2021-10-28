@@ -1,6 +1,9 @@
 
 import quests from '../data/quest-data.js';
 import { findById, getUser, setUser, scoreQuest } from '../utils.js';
+import { renderHeader } from '../renderheader.js';
+
+renderHeader();
 
 const params = new URLSearchParams(window.location.search);
 

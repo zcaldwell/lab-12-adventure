@@ -11,38 +11,41 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=VT323&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
-<body>
-    <form id='quest-form'>
-        <label for="name">
-            Your Workers Name
-            <input name="name" type="text">
-        </label>
-        <p id="avatars">
-            <label>
-                <input type="radio" name="job" required value="cashier">
-                <img>
-                Cashier
-            </label>
-            <label>
-                <input type="radio" name="job" required value="grocery-clerk">
-                <img>
-                Grocery Clerk
-            </label>
-            <label>
-                <input type="radio" name="job" required value="meat-clerk">
-                <img>
-                Meat Clerk
-            </label>
-            <label>
-                <input type="radio" name="job" required value="Barista">
-                <img>
-                Barista
-            </label>
-            <button id="submit">Start your shift!</button>
-    </form>
+<body id="main-body">
+    <h1 id="main-h1">Grocery Quest!</h1>
+    <div id="main">
+        <div id="main-content">
+            <form id='quest-form'>
+                <label for="name" id="name-label">
+                    Your Workers Name
+                    <input name="name" type="text">
+                </label>
+                <p id="avatars">
+                    <label class="avatar-label">
+                        <input type="radio" name="job" required value="cashier">
+                        <img src="assets/avatars/cashier.png" class="avatars">
+                        Cashier
+                    </label>
+                    <label class="avatar-label">
+                        <input type="radio" name="job" required value="chef">
+                        <img src="assets/avatars/chef.png" class="avatars">
+                        Chef
+                    </label>
+                    <label class="avatar-label">
+                        <input type="radio" name="job" required value="Barista">
+                        <img src="assets/avatars/barista.png" class="avatars">
+                        Barista
+                    </label>
+                <button id="submit">Start your shift!</button>
+            </form>
+        </div>
+    </main>
     <script type="module" src="./app.js"></script>
 </body>
 

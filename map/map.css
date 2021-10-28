@@ -1,6 +1,9 @@
 
+* {  
+    font-family: Kanit;
+}
 body {
-    background-image: url('../assets/storemap.jpg');
+    
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: center;
@@ -10,4 +13,14 @@ div {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#header-avatar {
+    height: 50px;
+    width: 50px
+}
+
+#user-info {
+    display: flex;
+    flex-direction: row;
 }

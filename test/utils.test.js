@@ -11,7 +11,7 @@ test('generateUser should give us an object with name and job', (expect) => {
     const expected = {
         completed: {},
         patience: 100,
-        correctiveactions: 0,
+        correctiveaction: 0,
         name: 'Zach',
         job: 'Cashier',
     };
@@ -34,7 +34,7 @@ test('setUser should save user to localStorage', (expect)=> {
     const userObject = {
         completed: {},
         patience: 100,
-        correctiveactions: 0,
+        correctiveaction: 0,
         name: 'Zach',
         job: 'Cashier',
     };
